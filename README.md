@@ -1,13 +1,20 @@
-# Sample Hardhat Project
+# Mempool Watcher
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project monitorizes every single transaction that enters into the mempool of the Ethereum Network
 
-Try running some of the following tasks:
+## Use cases
+
+This app could be used to run a frontrunning bot that copies and simulates the transactions of the mainnet and
+if they are profitable execute them taking advantage of a higher gas
+
+To get started:
 
 ```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npx hardhat run scripts/main.js
+```
+
+or
+
+```shell
+npm start
 ```
